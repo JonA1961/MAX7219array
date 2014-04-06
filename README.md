@@ -36,7 +36,10 @@ To run the demo, in the MAX7219array folder, enter the following at the command 
   python MAX7219array_demo.py
 
 To use the library file as a simple command-line utility to scroll a message on the array, first alter the permissions as follows:
+
   chmod +x MAX7219array.py
+  
 and you can then enter at the command line prompt:
+
   ./MAX7219array.py 'Your message goes here'
 
