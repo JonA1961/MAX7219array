@@ -56,7 +56,6 @@ from MAX7219fonts import CP437_FONT, SINCLAIRS_FONT, LCD_FONT, TINY_FONT
 from MAX7219array import DIR_L, DIR_R, DIR_U, DIR_D
 from MAX7219array import DIR_LU, DIR_RU, DIR_LD, DIR_RD
 from MAX7219array import DISSOLVE, GFX_ON, GFX_OFF, GFX_INVERT
-from MAX7219array import DISSOLVE, GFX_ON, GFX_OFF, GFX_INVERT
 
 # Initialise the library and the MAX7219/8x8LED array
 m7219.init()
