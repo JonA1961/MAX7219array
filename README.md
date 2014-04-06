@@ -28,6 +28,8 @@ git clone https://github.com/JonA1961/MAX7219array.git
 
 This will create a folder in your current folder called MAX7219array and copy the files from Github into it.
 
+Note that the demo script is written for a set-up of 8 MAX7219 boards.  It should run even if you have a different number but will not (obviously) display exactly what I intended it to.  Looking at the code however you should see how to adapt it for your purposes, or how to use the library functions.
+
 The wiring setup I used for the MAX7219 boards is documented in either the MAX7219array.py or the MAX7219array_ReadMe.py files.  You also need to set the value of NUM_MATRICES in the MAX7219array.py library file to the number of MAX7219 boards you have in your daisy-chain. 
 
 To run the demo, in the MAX7219array folder, enter the following at the command line prompt:
