@@ -633,7 +633,7 @@ if __name__ == "__main__":
         print "Run syntax:"
         print "  python MAX7219array.py message [repeats [speed [direction [font]]]]"
         print "    or, if the file has been made executable with chmod +x MAX7219array.py :"
-        print "      ./MAX7219array.py message [repeats [speed [direction]]]"
+        print "      ./MAX7219array.py message [repeats [speed [direction [font]]]]"
         print "Parameters:"
         print "  (none)               : displays this help information"
         print "  message              : any text to be displayed on the array"
