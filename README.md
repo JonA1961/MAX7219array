@@ -33,6 +33,7 @@ Note that the demo script is written for a set-up of 8 MAX7219 boards.  It shoul
 The wiring setup I used for the MAX7219 boards is documented in either the MAX7219array.py or the MAX7219array_ReadMe.py files.  You also need to set the value of NUM_MATRICES in the MAX7219array.py library file to the number of MAX7219 boards you have in your daisy-chain. 
 
 To run the demo, in the MAX7219array folder, enter the following at the command line prompt:
+
   python MAX7219array_demo.py
 
 To use the library file as a simple command-line utility to scroll a message on the array, first alter the permissions as follows:
@@ -43,3 +44,6 @@ and you can then enter at the command line prompt:
 
   ./MAX7219array.py 'Your message goes here'
 
+
+Note:
+Written for Python 2.7.  I believe the main culprits requiring attention to make the library script compatible with Python 3 would be the print statements in the last 20 or so lines
