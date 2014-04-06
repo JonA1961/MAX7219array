@@ -26,7 +26,7 @@ To download all the MAX7219array files, enter the following on your RPi at the c
 git clone https://github.com/JonA1961/MAX7219array.git
 This will create a folder in your current folder called MAX7219array and copy the files from Github into it.
 
-The wiring setup I used for the MAX7219 boards is documented in either the MAX7219array.py or the MAX7219array_ReadMe.py files.
+The wiring setup I used for the MAX7219 boards is documented in either the MAX7219array.py or the MAX7219array_ReadMe.py files.  You also need to set the value of NUM_MATRICES in the MAX7219array.py library file to the number of MAX7219 boards you have in your daisy-chain. 
 
 To run the demo, in the MAX7219array folder, enter the following at the command line prompt:
 python MAX7219array_demo.py
