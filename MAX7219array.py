@@ -113,6 +113,7 @@
 # MAX7219 datasheet gives full details of operation of the
 # LED driver chip
 # ---------------------------------------------------------
+
 import spidev
 import time
 from random import randrange
@@ -170,8 +171,6 @@ DIR_LU     = 9   # Left & up diagonal scrolling for gfx_scroll() function only
 DIR_LD     = 12  # Left & down diagonal scrolling for gfx_scroll() function only
 DISSOLVE   = 16  # Pseudo-random fade transition for wipe_message() function only
 GFX_OFF    = 0   # Turn the relevant LEDs off, or omit (don't draw) the endpoint of a line
-DISSOLVE   = 16  # Pseudo-random fade transition for wipe_message() function only
-GFX_OFF    = 0   # Turn the relevant LEDs off, or omit (don't draw) the endpoint of a line
 GFX_ON     = 1   # Turn the relevant LEDs on, or include (draw) the endpoint of a line
 GFX_INVERT = 2   # Invert the state of the relevant LEDs
 
@@ -227,8 +226,6 @@ def send_matrix_letter(matrix, char_code, font=DEFAULT_FONT):
         for col in range(8):
             send_matrix_reg_byte(matrix, col+1, font[char_code % 0x100][col])
 
-def send_matrix_shifted_letter(matrix, curr_code, next_code, progress, direction=DIR_L, font=DEFAULT_FONT):
-    # Send to one MAX7219 matrix a combination of two specified characters, representing a partially-scrolled position
 def send_matrix_shifted_letter(matrix, curr_code, next_code, progress, direction=DIR_L, font=DEFAULT_FONT):
     # Send to one MAX7219 matrix a combination of two specified characters, representing a partially-scrolled position
     # progress: 0-7: how many pixels the characters are shifted: 0=curr_code fully displayed; 7=one pixel less than fully shifted to next_code
